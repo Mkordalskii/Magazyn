@@ -2,6 +2,7 @@ package users;
 
 import java.util.ArrayList;
 import java.util.List;
+import zamowienia.Zamowienie;
 
 public class Administrator extends User {
     private int id;

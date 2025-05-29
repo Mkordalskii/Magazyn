@@ -2,6 +2,7 @@ package users;
 
 import java.util.ArrayList;
 import java.util.List;
+import zamowienia.Zamowienie;
 
 public class Uzytkownik extends User {
     private int id;

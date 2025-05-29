@@ -2,6 +2,8 @@ package users;
 
 import java.util.ArrayList;
 import java.util.List;
+import zamowienia.Zamowienie;
+
 
 public abstract class User {
     private int id;
