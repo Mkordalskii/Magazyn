@@ -5,27 +5,23 @@ import java.util.List;
 import zamowienia.Zamowienie;
 
 public class Uzytkownik extends User {
-    private int id;
-    private String nazwa;
-    private String haslo;
-    private Role rola;
-    private List<Zamowienie> zamowienia;
 
     public Uzytkownik(int id, String nazwa, String haslo, Role rola) {
-       super(id, nazwa, haslo, rola);
-       zamowienia = new ArrayList<>();
+        super(id, nazwa, haslo, rola);
     }
-    public int getId() {return id;}
-    public String getNazwa() {return nazwa;}
-    public Role getRola() {return rola;}
-    public boolean porownajHaslo(String haslo) {
-        return this.haslo.equals(haslo);
-    }
-    @Override
-    public boolean czyMozeDodawac(){return false;}
-    @Override
-    public boolean czyMozeEdytowac(){return false;}
-    @Override
-    public boolean czyMozeUsuwac(){return false;}
-}
 
+    @Override
+    public boolean czyMozeDodawac() {
+        return false;
+    }
+
+    @Override
+    public boolean czyMozeEdytowac() {
+        return false;
+    }
+
+    @Override
+    public boolean czyMozeUsuwac() {
+        return false;
+    }
+}
